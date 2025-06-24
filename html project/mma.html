@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="MMA Flooring - Casian IRF" />
+  <title>MMA Flooring | Casian IRF</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    .service-content {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .service-content h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+    .service-content p, .service-content ul {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+    }
+    .gallery {
+      position: relative;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+    .gallery img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.5s ease;
+    }
+    .gallery img.active {
+      display: block;
+      position: relative;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      color: #fff;
+      background-color: #f39c12;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #e67e22;
+    }
+    .tick-list {
+      list-style: none !important;
+      padding-left: 0;
+      margin: 1.5rem auto;
+      max-width: 800px;
+      text-align: left;
+    }
+    .tick-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .tick-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      color: #4CAF50;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="index.html"><img src="images/aa.png" alt="Casian IRF Logo" class="logo" /></a>
+      <nav>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#industries">Industries</a></li>
+          <li><a href="index.html#process">Process</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="margin-top: 100px;">
+    <section class="service-content">
+      <h1>MMA Flooring</h1>
+      <p>
+        High-performance epoxy resin floors for industrial and commercial facilities, offering excellent durability and chemical resistance. MMA (Methyl Methacrylate) floors cure rapidly, making them ideal for fast turnaround environments and operational facilities that cannot afford long downtimes.
+      </p>
+
+      <div class="gallery">
+        <img src="images/mma1.jpg" class="active" alt="MMA Flooring Slide 1">
+        <img src="images/mma2.jpg" alt="MMA Flooring Slide 2">
+        <img src="images/mma3.jpg" alt="MMA Flooring Slide 3">
+      </div>
+
+      <h2>Benefits of MMA Flooring</h2>
+      <ul class="tick-list">
+        <li>Ultra-fast curing time — ready within hours</li>
+        <li>Exceptional durability under harsh conditions</li>
+        <li>Highly resistant to chemicals and solvents</li>
+        <li>Suitable for cold and sub-zero applications</li>
+        <li>Ideal for hygienic and sterile environments</li>
+      </ul>
+
+      <h2>Applications</h2>
+      <p>
+        MMA flooring is widely used in commercial kitchens, hospitals, pharmaceutical plants, cold storage areas, food processing, manufacturing facilities, and garages — anywhere fast installation and durability are critical.
+      </p>
+
+      <a href="index.html#contact" class="btn">Request a Free Quote</a>
+    </section>
+  </main>
+
+  <footer style="margin-top: 60px;">
+    <div class="container">
+      <div class="footer-col">
+        <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
+        <p>Industrial Resin Flooring Solutions</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Phone: <a href="tel:+353000000000">+353 00 000 0000</a></p>
+        <p>Email: <a href="mailto:info@casianirf.com">info@casianirf.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <p><a href="index.html#about">About Us</a></p>
+        <p><a href="index.html#services">Services</a></p>
+        <p><a href="index.html#contact">Contact Us</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copyright">© 2025 Casian IRF. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.querySelector("nav").classList.toggle("open");
+    }
+
+    // Slideshow logic
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".gallery img");
+
+    function showSlides() {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add("active");
+    }
+
+    setInterval(showSlides, 3000);
+  </script>
+</body>
+</html>
