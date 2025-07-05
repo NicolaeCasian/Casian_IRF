@@ -2,96 +2,216 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Polyurethane Flooring - Casian IRF" />
   <title>Polyurethane Flooring | Casian IRF</title>
+
+  <!-- Font Awesome 6 Free -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
   <style>
-    .service-content {
-      text-align: center;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #f39c12;
+      --accent-hover: #e67e22;
+      --text-color: #333;
+      --text-light: #fff;
+      --section-bg-alt: #f7f7f7;
     }
-    .service-content h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.5rem;
-      color: #2c3e50;
-      margin-bottom: 1rem;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: var(--text-color);
+      line-height: 1.6;
+      background: #fff;
     }
-    .service-content p, .service-content ul {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #555;
+    h1,h2,h3 { font-family: 'Montserrat', sans-serif; color: var(--primary-color); }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    p { font-size: 1.1rem; color: #555; margin-bottom: 1rem; }
+    a { text-decoration: none; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+    /* ——— Header & Nav ——— */
+    header {
+      background: var(--primary-color);
+      position: fixed; top: 0; width: 100%;
+      z-index: 1000; padding: 10px 0;
     }
-    .gallery {
-      position: relative;
-      max-width: 1000px;
-      margin: 40px auto;
+    header .container {
+      display: flex; align-items: center; justify-content: space-between;
     }
-    .gallery img {
-      width: 100%;
-      max-height: 500px;
-      object-fit: cover;
-      border-radius: 8px;
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: opacity 0.5s ease;
-    }
-    .gallery img.active {
-      display: block;
-      position: relative;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      font-family: 'Montserrat', sans-serif;
+    .logo { max-height: 50px; }
+    nav { position: relative; }
+    .nav-links { list-style: none; display: flex; gap: 15px; }
+    .nav-links a {
+      color: var(--text-light);
+      font-size: 0.9em;
       font-weight: 600;
       text-transform: uppercase;
-      font-size: 0.95rem;
-      color: #fff;
-      background-color: #f39c12;
-      border-radius: 4px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
     }
-    .btn:hover {
-      background-color: #e67e22;
+    .nav-toggle {
+      display: none; font-size: 1.5rem;
+      background: none; border: none;
+      color: var(--text-light);
+      cursor: pointer;
     }
-    .tick-list {
-      list-style: none !important;
-      padding-left: 0;
-      margin: 1.5rem auto;
-      max-width: 800px;
-      text-align: left;
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute; top: 60px; right: 0;
+        background: var(--primary-color);
+        flex-direction: column;
+        width: 200px;
+        display: none;
+      }
+      nav.open .nav-links { display: flex; }
+      .nav-toggle { display: block; }
     }
-    .tick-list li {
+    main { margin-top: 100px; }
+
+    /* ——— Intro ——— */
+    .intro-section {
+      background: var(--section-bg-alt);
+      padding: 4rem 0;
+      border-top: 6px solid var(--accent-color);
+    }
+    .intro-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .intro-text {
+      flex: 1 1 400px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .intro-text h1 { margin-bottom: 0.5rem; }
+    .intro-text p { margin-bottom: 1.5rem; }
+    .intro-text .btn { margin-top: 0.5rem; }
+    .intro-gallery {
+      flex: 1 1 400px;
       position: relative;
-      padding-left: 30px;
-      margin-bottom: 12px;
-      font-size: 1.1rem;
-      color: #555;
+      max-width: 100%;
     }
-    .tick-list li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      top: 2px;
-      color: #4CAF50;
-      font-weight: bold;
-      font-size: 1rem;
+    .intro-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: none;
+      object-fit: cover;
+      transition: opacity 0.5s ease, box-shadow 0.3s ease;
+    }
+    .intro-gallery img.active {
+      display: block;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* ——— Benefits ——— */
+    .benefits-section { padding: 4rem 0; }
+    .benefits-section h2 { text-align: center; margin-bottom: 2rem; }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .benefit-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-left: 4px solid var(--accent-color);
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    /* ——— Applications ——— */
+    .applications-section {
+      background: var(--section-bg-alt);
+      padding: 4rem 0;
+      border-top: 6px solid var(--accent-color);
+    }
+    .applications-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .applications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .application-card {
+      background: #fff;
+      padding: 2rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .application-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .application-icon {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ——— CTA & Footer ——— */
+    .cta-section {
+      padding: 3rem 1rem; text-align: center; background: #fff;
+    }
+    .cta-section .btn {
+      font-size: 1.1rem; padding: 16px 32px;
+    }
+    footer {
+      background: var(--primary-color);
+      color: #ccc;
+      padding: 20px 0;
+    }
+    footer .container {
+      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;
+    }
+    footer a { color: #ccc; text-decoration: none; }
+    footer .copyright {
+      width: 100%; text-align: center; margin-top: 10px; font-size: 0.8em;
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <div class="container">
-      <a href="index.html"><img src="images/aa.png" alt="Casian IRF Logo" class="logo" /></a>
+      <a href="index.html">
+        <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
+      </a>
       <nav>
         <button class="nav-toggle" onclick="toggleNav()">☰</button>
         <ul class="nav-links">
@@ -106,47 +226,108 @@
     </div>
   </header>
 
-  <main style="margin-top: 100px;">
-    <section class="service-content">
-      <h1>Polyurethane Flooring</h1>
-      <p>
-        Polyurethane flooring is known for its flexibility, thermal resistance, and excellent durability in extreme environments. Casian IRF delivers professional polyurethane flooring systems ideal for commercial kitchens, freezers, breweries, and food production facilities where hygiene and high performance are critical.
-      </p>
-
-      <div class="gallery">
-        <img src="images/pu1.jpg" class="active" alt="Polyurethane Floor Slide 1">
-        <img src="images/pu2.jpg" alt="Polyurethane Floor Slide 2">
-        <img src="images/pu3.jpg" alt="Polyurethane Floor Slide 3">
+  <main>
+    <!-- Intro -->
+    <section class="intro-section">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h1>Polyurethane Flooring</h1>
+          <p>
+            Polyurethane flooring combines flexibility with outstanding durability and UV stability. At Casian IRF, our high‐performance polyurethane coatings resist abrasion, thermal shock and chemicals—making them perfect for industrial plants, food processing, automotive shops and more.
+          </p>
+          <a href="index.html#contact" class="btn">Request a Free Quote</a>
+        </div>
+        <div class="intro-gallery">
+          <img src="images/2.1.jpg" class="active" alt="Polyurethane Slide 1">
+          <img src="images/2.2.jpg" alt="Polyurethane Slide 2">
+          <img src="images/2.3.jpg" alt="Polyurethane Slide 3">
+        </div>
       </div>
+    </section>
 
-      <h2>Benefits of Polyurethane Flooring</h2>
-      <ul class="tick-list">
-        <li>Excellent resistance to thermal shock and hot water</li>
-        <li>Durable and flexible under heavy impact</li>
-        <li>Highly resistant to chemicals and abrasion</li>
-        <li>Seamless and hygienic surface</li>
-        <li>Long-lasting in food-grade environments</li>
-      </ul>
+    <!-- Benefits -->
+    <section class="benefits-section">
+      <div class="container">
+        <h2>Benefits of Polyurethane Flooring</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card"><h3>Excellent abrasion resistance</h3></div>
+          <div class="benefit-card"><h3>UV-stable, non-yellowing finish</h3></div>
+          <div class="benefit-card"><h3>Flexible, crack-bridging properties</h3></div>
+          <div class="benefit-card"><h3>Chemical and thermal shock resistant</h3></div>
+          <div class="benefit-card"><h3>Easy to clean, seamless surface</h3></div>
+        </div>
+      </div>
+    </section>
 
-      <h2>Applications</h2>
-      <p>
-        Polyurethane flooring is ideal for food processing plants, breweries, pharmaceutical facilities, commercial kitchens, cold storage areas, and environments exposed to moisture and heat.
-      </p>
+    <!-- Applications -->
+    <section class="applications-section">
+      <div class="container">
+        <h2>Applications</h2>
+        <div class="applications-grid">
+          <div class="application-card">
+            <div class="application-icon">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+            <h3>Manufacturing Plants</h3>
+            <p>Withstands heavy machinery, chemical spills and impact.</p>
+          </div>
+          <div class="application-card">
+            <div class="application-icon">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <h3>Food & Beverage</h3>
+            <p>Hygienic, non-porous surface resistant to acids and oils.</p>
+          </div>
+          <div class="application-card">
+            <div class="application-icon">
+              <i class="fa-solid fa-car-battery"></i>
+            </div>
+            <h3>Automotive Workshops</h3>
+            <p>Resists oil, grease and thermal shock from hot equipment.</p>
+          </div>
+          <div class="application-card">
+            <div class="application-icon">
+              <i class="fa-solid fa-flask"></i>
+            </div>
+            <h3>Pharmaceutical Labs</h3>
+            <p>Seamless, dust-free floors for controlled environments.</p>
+          </div>
+          <div class="application-card">
+            <div class="application-icon">
+              <i class="fa-solid fa-warehouse"></i>
+            </div>
+            <h3>Cold Storage</h3>
+            <p>Flexible, crack-bridging membranes for temperature swings.</p>
+          </div>
+          <div class="application-card">
+            <div class="application-icon">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <h3>Retail & Showrooms</h3>
+            <p>Attractive, high-gloss finish that endures foot traffic.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <a href="index.html#contact" class="btn">Request a Free Quote</a>
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <a href="index.html#contact" class="btn">Request a Free Quote</a>
+      </div>
     </section>
   </main>
 
-  <footer style="margin-top: 60px;">
+  <footer>
     <div class="container">
       <div class="footer-col">
-        <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
+        <img src="images/aa.png" alt="Casian IRF Logo" class="logo">
         <p>Industrial Resin Flooring Solutions</p>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Phone: <a href="tel:+353000000000">+353 00 000 0000</a></p>
-        <p>Email: <a href="mailto:info@casianirf.com">info@casianirf.com</a></p>
+        <p><a href="tel:+353000000000">+353 00 000 0000</a></p>
+        <p><a href="mailto:info@casianirf.com">info@casianirf.com</a></p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
@@ -162,22 +343,16 @@
 
   <script>
     function toggleNav() {
-      document.querySelector("nav").classList.toggle("open");
+      document.querySelector('nav').classList.toggle('open');
     }
-
-    // Slideshow logic
-    let slideIndex = 0;
-    const slides = document.querySelectorAll(".gallery img");
-
-    function showSlides() {
-      slides.forEach((slide, i) => {
-        slide.classList.remove("active");
-      });
-      slideIndex = (slideIndex + 1) % slides.length;
-      slides[slideIndex].classList.add("active");
-    }
-
-    setInterval(showSlides, 3000); // Change image every 3 seconds
+    // Intro carousel
+    let idx = 0;
+    const slides = document.querySelectorAll('.intro-gallery img');
+    setInterval(() => {
+      slides[idx].classList.remove('active');
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add('active');
+    }, 3000);
   </script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+/* Polyurethane Flooring Styles (inherits most from epoxy) */
+:root {
+  --primary-color: #2c3e50; /* Dark blue-gray */
+  --accent-color: #27ae60;  /* Green accent for polyurethane */
+  --accent-color-hover: #1e8449;
+  --text-color: #333;
+  --text-light: #fff;
+  --section-bg-alt: #f7f7f7;
+}
+
+/* All remaining styles can be copied directly from the epoxy flooring CSS */
+/* For clarity and maintenance, you may import or reuse the same layout styles */
+
+/* Optional: Change a few section-specific elements if you want subtle distinction */
+.applications-section {
+  border-top: 6px solid var(--accent-color);
+}
+
+.benefit-card, .application-card {
+  border-left: 4px solid var(--accent-color);
+}
+
+.btn {
+  background-color: var(--accent-color);
+}
+
+.btn:hover {
+  background-color: var(--accent-color-hover);
+}
+
+.application-icon {
+  color: var(--accent-color);
+}
+
+footer .footer-col h4 {
+  color: var(--accent-color);
+}
