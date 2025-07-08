@@ -4,30 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Epoxy Flooring - Casian IRF" />
-  <title>Epoxy Flooring | Casian IRF</title>
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-p+8Vv2dMZJT2uKxVCDK0qBKF+qFlxXDxjUwJeENY7oGtRHpwvjyUiG59fMSiv0VVlj9m6Vb4ss3kj5E0UUa1kg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <!-- SEO Meta Tags -->
+  <title>Epoxy Flooring | Casian IRF – Industrial Resin & Epoxy Flooring Ireland</title>
+  <meta name="description"
+        content="Casian IRF delivers industry-leading epoxy and resin flooring solutions across Ireland—durable, chemical-resistant, and seamless floors for warehouses, production areas, garages, and commercial facilities. Get your free quote today!" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <!-- JSON-LD for Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Casian IRF",
+        "url": "https://www.casianirf.ie",
+        "logo": "https://www.casianirf.ie/images/aa.png",
+        "sameAs": [
+          "https://www.facebook.com/casianirf",
+          "https://www.linkedin.com/company/casianirf"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Casian IRF",
+        "description": "Expert epoxy and resin flooring contractors serving industrial and commercial clients in Ireland",
+        "url": "https://www.casianirf.ie",
+        "telephone": "+353894205742",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Your Street Address",
+          "addressLocality": "Dublin",
+          "addressCountry": "IE"
+        },
+        "openingHours": [
+          "Mo-Fr 08:00-18:00"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Font Awesome & Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet"/>
+  <link
     rel="stylesheet"
-  />
-  <!-- Font Awesome 6 Free (no integrity so you don’t accidentally block it) -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
-
-
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+  
   <style>
     :root {
       --primary-color: #2c3e50;
@@ -118,15 +144,22 @@
       position: relative;
       max-width: 100%;
     }
-    .intro-gallery img {
+    .img-box {
+      position: relative;
       width: 100%;
-      height: auto;
+      aspect-ratio: 4/3;
+      overflow: hidden;
       border-radius: 8px;
-      display: none;
-      object-fit: cover;
-      transition: opacity 0.5s ease, box-shadow 0.3s ease;
     }
-    .intro-gallery img.active {
+    .img-box img {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: opacity 0.5s ease, box-shadow 0.3s ease;
+      display: none;
+    }
+    .img-box img.active {
       display: block;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
@@ -154,7 +187,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     }
 
-    /* ——— Redesigned Applications ——— */
+    /* ——— Applications ——— */
     .applications-section {
       background: var(--section-bg-alt);
       padding: 4rem 0;
@@ -183,7 +216,6 @@
       transform: translateY(-6px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
-    /* Updated icon styling */
     .application-icon {
       font-size: 2.5rem;
       color: var(--accent-color);
@@ -192,27 +224,7 @@
       justify-content: center;
       align-items: center;
     }
-/* universal image box: 4:3 ratio */
-    .img-box {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      overflow: hidden;
-      border-radius: 8px;
-    }
-    .img-box img {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      object-position: center;
-      transition: opacity 0.5s ease, box-shadow 0.3s ease;
-      display: none;
-    }
-    .img-box img.active {
-      display: block;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+
     /* ——— CTA ——— */
     .cta-section {
       padding: 3rem 1rem; text-align: center; background: #fff;
@@ -247,12 +259,12 @@
       <nav>
         <button class="nav-toggle" onclick="toggleNav()">☰</button>
         <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#industries">Industries</a></li>
+          <li><a href="index.html#process">Process</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -266,16 +278,16 @@
         <div class="intro-text">
           <h1>Epoxy Flooring</h1>
           <p>
-            Epoxy flooring is one of the most durable and versatile flooring systems available for industrial and commercial use. At Casian IRF, we apply high‐performance epoxy coatings that provide superior strength, chemical resistance, and a smooth finish ideal for warehouses, production areas, garages, and more.
+            Casian IRF’s industrial epoxy flooring systems deliver unmatched durability, chemical resistance, and a smooth, seamless finish—ideal for heavy-traffic warehouses, production facilities, commercial kitchens, garages, and more across Ireland.
           </p>
           <a href="index.html#contact" class="btn">Request a Free Quote</a>
         </div>
         <div class="intro-gallery">
           <div class="img-box">
-          <img src="images/epo1.jpg" class="active" alt="Epoxy Slide 1">
-          <img src="images/epo2.jpg" alt="Epoxy Slide 2">
-          <img src="images/epoxy_resin_floor_paint_1.jpg" alt="Epoxy Slide 3">
-            </div>
+            <img src="images/epo1.jpg" class="active" alt="Epoxy Floor Installation 1">
+            <img src="images/epo2.jpg" alt="Epoxy Floor Installation 2">
+            <img src="images/epoxy_resin_floor_paint_1.jpg" alt="Epoxy Floor Installation 3">
+          </div>
         </div>
       </div>
     </section>
@@ -283,91 +295,80 @@
     <!-- Benefits -->
     <section class="benefits-section">
       <div class="container">
-        <h2>Benefits of Epoxy Flooring</h2>
+        <h2>Why Choose Epoxy Flooring?</h2>
         <div class="benefits-grid">
-          <div class="benefit-card"><h3>High durability and long lifespan</h3></div>
-          <div class="benefit-card"><h3>Resistant to chemicals, oils, and heavy traffic</h3></div>
-          <div class="benefit-card"><h3>Seamless, easy‐to‐clean surface</h3></div>
-          <div class="benefit-card"><h3>Slip‐resistant options available</h3></div>
-          <div class="benefit-card"><h3>Improves brightness and appearance of facilities</h3></div>
+          <div class="benefit-card"><h3>Industrial-grade toughness</h3></div>
+          <div class="benefit-card"><h3>Superior chemical & oil resistance</h3></div>
+          <div class="benefit-card"><h3>Smooth, seamless, hygienic surface</h3></div>
+          <div class="benefit-card"><h3>Slip-resistant finishes available</h3></div>
+          <div class="benefit-card"><h3>Enhances facility brightness & appearance</h3></div>
         </div>
       </div>
     </section>
 
+    <!-- Applications -->
     <section class="applications-section">
-  <div class="container">
-    <h2>Applications</h2>
-    <div class="applications-grid">
-      <div class="application-card">
-        <div class="application-icon">
-          <i class="fa-solid fa-warehouse"></i>
+      <div class="container">
+        <h2>Common Applications</h2>
+        <div class="applications-grid">
+          <div class="application-card">
+            <div class="application-icon"><i class="fa-solid fa-warehouse"></i></div>
+            <h3>Warehouses & Logistics</h3>
+            <p>High-impact floors designed for forklifts, pallets, and continuous operations.</p>
+          </div>
+          <div class="application-card">
+            <div class="application-icon"><i class="fa-solid fa-industry"></i></div>
+            <h3>Manufacturing Plants</h3>
+            <p>Chemical-proof surfaces engineered for production lines and heavy machinery.</p>
+          </div>
+          <div class="application-card">
+            <div class="application-icon"><i class="fa-solid fa-utensils"></i></div>
+            <h3>Commercial Kitchens</h3>
+            <p>Hygienic, quick-clean coatings that resist hot oils, acids, and daily wash-downs.</p>
+          </div>
+          <div class="application-card">
+            <div class="application-icon"><i class="fa-solid fa-car"></i></div>
+            <h3>Garages & Workshops</h3>
+            <p>Oil- and abrasion-resistant floors built to withstand vehicle service and heavy tools.</p>
+          </div>
+          <div class="application-card">
+            <div class="application-icon"><i class="fa-solid fa-store"></i></div>
+            <h3>Retail & Showrooms</h3>
+            <p>Glossy, high-end aesthetics that showcase products and resist foot traffic.</p>
+          </div>
+          <div class="application-card">
+            <div class="application-icon"><i class="fa-solid fa-flask"></i></div>
+            <h3>Pharma & Labs</h3>
+            <p>Seamless, dust-free surfaces with chemical-resistant options for controlled environments.</p>
+          </div>
         </div>
-        <h3>Warehouses</h3>
-        <p>Durable floor solutions for heavy traffic and forklift use.</p>
       </div>
-      <div class="application-card">
-        <div class="application-icon">
-          <i class="fa-solid fa-industry"></i>
-        </div>
-        <h3>Manufacturing</h3>
-        <p>Chemical- and impact-resistant surfaces for production lines.</p>
-      </div>
-      <div class="application-card">
-        <div class="application-icon">
-          <i class="fa-solid fa-utensils"></i>
-        </div>
-        <h3>Commercial Kitchens</h3>
-        <p>Hygienic, easy-to-clean floors that stand up to spills.</p>
-      </div>
-      <div class="application-card">
-        <div class="application-icon">
-          <i class="fa-solid fa-store"></i>
-        </div>
-        <h3>Showrooms</h3>
-        <p>Glossy, high-end finishes to showcase your products.</p>
-      </div>
-      <div class="application-card">
-        <div class="application-icon">
-          <i class="fa-solid fa-parking"></i>
-        </div>
-        <h3>Parking Garages</h3>
-        <p>Oil- and abrasion-resistant coatings for vehicle tiers.</p>
-      </div>
-      <div class="application-card">
-        <div class="application-icon">
-          <i class="fa-solid fa-flask"></i>
-        </div>
-        <h3>Clean Rooms</h3>
-        <p>Seamless, dust-free surfaces for sterile environments.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- CTA -->
     <section class="cta-section">
       <div class="container">
-        <a href="index.html#contact" class="btn">Request a Free Quote</a>
+        <a href="index.html#contact" class="btn">Request Your Free Quote</a>
       </div>
     </section>
 
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-col">
-        <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
-        <p>Industrial Resin Flooring Solutions</p>
+        <a href="index.html"><img src="images/aa.png" alt="Casian IRF Logo" class="logo"/></a>
+        <p>Casian IRF – Industrial Resin Flooring Experts</p>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Phone: <a href="tel:+353000000000">+353 89 420 5742</a></p>
-        <p>Email: <a href="mailto:info@casianirf.com">casianirf@gmail.com</a></p>
+        <p><a href="tel:+353894205742">+353 89 420 5742</a></p>
+        <p><a href="mailto:casianirf@gmail.com">casianirf@gmail.com</a></p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
-         <p><a href="index.html#about">About Us</a></p>
+        <p><a href="index.html#about">About Us</a></p>
         <p><a href="index.html#services">Services</a></p>
         <p><a href="index.html#contact">Contact Us</a></p>
       </div>
