@@ -3,31 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Casian IRF - Industrial Resin Flooring Solutions" />
-  <title>Casian IRF - Industrial Resin Flooring</title>
+  
+  <!-- SEO Meta Tags -->
+  <title>Casian IRF | Industrial Resin & Epoxy Flooring Contractors Ireland</title>
+  <meta name="description"
+        content="Casian IRF delivers top-quality industrial resin and epoxy flooring across Ireland—durable, chemical-resistant solutions for factories, warehouses, and commercial facilities. Request a free quote today!" />
+  
+  <!-- JSON-LD for Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Casian IRF",
+        "url": "https://www.casianirf.ie",
+        "logo": "https://www.casianirf.ie/images/aa.png",
+        "sameAs": [
+          "https://www.facebook.com/casianirf",
+          "https://www.linkedin.com/company/casianirf"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Casian IRF",
+        "description": "Industrial resin and epoxy flooring contractors serving Ireland",
+        "url": "https://www.casianirf.ie",
+        "telephone": "+353894205742",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Your Street Address",
+          "addressLocality": "Dublin",
+          "addressCountry": "IE"
+        },
+        "openingHours": [
+          "Mo-Fr 08:00-18:00"
+        ]
+      }
+    ]
+  }
+  </script>
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header>
     <div class="container">
-      <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
+      <a href="index.html">
+        <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
+      </a>
       <nav>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
         <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
+          <li><a href="#process">Our Process</a></li>
           <li><a href="#industries">Industries</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
       </nav>
     </div>
   </header>
+
   <main>
+    <!-- Hero Section -->
     <section id="hero" class="hero">
       <div class="hero-slide active" style="background-image: url('images/pro.webp');"></div>
       <div class="hero-slide" style="background-image: url('images/qq3.jpg');"></div>
@@ -37,129 +83,138 @@
       <div class="hero-content">
         <h1>Casian IRF</h1>
         <p>Industrial Resin Flooring Solutions</p>
-        <a href="#contact" class="btn">Contact Us</a>
+        <a href="#contact" class="btn">Request a Free Quote</a>
       </div>
     </section>
+
+    <!-- About Us -->
     <section id="about">
       <div class="container">
-        <h2>About Us</h2>
-        <p>Casian Industrial Resin Flooring (Casian IRF) is a leading provider of high-quality industrial resin flooring solutions. We specialize in durable epoxy and polyurethane floor coatings for a variety of industrial and commercial environments.</p>
-        <p>Our experienced team ensures every project is executed with precision and professionalism, from surface preparation to final finish. We pride ourselves on delivering floors that are safe, easy to maintain, and built to withstand heavy use, all while meeting our clients’ aesthetic and performance requirements.</p>
+        <h2>About Casian IRF</h2>
+        <p>Casian IRF (Industrial Resin Flooring) is Ireland’s trusted specialist for high-performance epoxy and polyurethane flooring systems. We combine expert surface preparation with premium materials to deliver seamless, chemical-resistant floors built to last.</p>
+        <p>Our certified installers handle projects of any scale—from manufacturing plants and warehouses to food processing facilities—ensuring on-time delivery, industry compliance, and a flawless finish every time.</p>
       </div>
     </section>
+
+    <!-- Services -->
     <section id="services">
       <div class="container">
-        <h2>Our Services</h2>
+        <h2>Our Flooring Services</h2>
         <div class="services-list">
           <div class="service-item">
             <h3>Epoxy Flooring</h3>
-            <p>High-performance epoxy resin floors for industrial and commercial facilities, offering excellent durability and chemical resistance.</p>
+            <p>Industrial and commercial epoxy resin flooring that stands up to heavy traffic, forklift loads, and aggressive chemicals.</p>
             <a href="epoxy.html">Learn More</a>
           </div>
           <div class="service-item">
-            <h3>Polyurethane Floors</h3>
-            <p>Resilient polyurethane flooring systems ideal for areas with extreme temperature variations and heavy mechanical impact.</p>
-            <a href="polyure.html">Learn More</a>
+            <h3>Polyurethane Flooring</h3>
+            <p>Flexible, UV-stable polyurethane coatings ideal for extreme temperatures, thermal shock zones, and high-impact areas.</p>
+            <a href="polyurethane-flooring.html">Learn More</a>
           </div>
           <div class="service-item">
             <h3>Floor Preparation</h3>
-            <p>Professional concrete preparation, including shot blasting and diamond grinding, to ensure optimal bonding and longevity of resin floors.</p>
-            <a href="floor.html">Learn More</a>
+            <p>Concrete profiling, shot-blasting, diamond grinding, and moisture testing to guarantee maximum adhesion and a level substrate.</p>
+            <a href="floor-preparation.html">Learn More</a>
           </div>
           <div class="service-item">
             <h3>Repairs &amp; Maintenance</h3>
-            <p>Expert repair of damaged resin floors and scheduled maintenance services to prolong the life and performance of your flooring investment.</p>
-            <a href="repairs.html">Learn More</a>
+            <p>Crack injections, spall repairs, seal-coat renewals, and scheduled maintenance contracts to protect and extend floor life.</p>
+            <a href="repairs-maintenance.html">Learn More</a>
           </div>
           <div class="service-item">
             <h3>MMA Flooring</h3>
-            <p>High-performance epoxy resin floors for industrial and commercial facilities, offering excellent durability and chemical resistance.</p>
-            <a href="mma.html">Learn More</a>
+            <p>Rapid-cure methyl methacrylate systems offering chemical resistance and minimal downtime—even in sub-zero conditions.</p>
+            <a href="mma-flooring.html">Learn More</a>
           </div>
-           <div class="service-item">
-            <h3>Parking & Line Markings</h3>
-            <p>High-visibility parking and line marking solutions for industrial and commercial sites, offering precise traffic guidance and durable, weather-resistant finishes.</p>
-
-            <a href="parking.html">Learn More</a>
+          <div class="service-item">
+            <h3>Parking &amp; Line Markings</h3>
+            <p>High-visibility thermoplastic and epoxy line markings for parking bays, drive lanes, pedestrian crossings, and safety zones.</p>
+            <a href="parking-line-markings.html">Learn More</a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Our Process -->
     <section id="process">
       <div class="container">
-        <h2>Our Process</h2>
+        <h2>Our Proven Process</h2>
         <div class="process-steps">
           <div class="process-step">
             <div class="step-number">1</div>
-            <h3>Consultation</h3>
-            <p>We discuss your needs and assess your facility to recommend the best resin flooring solution for your application.</p>
+            <h3>Consultation & Quotation</h3>
+            <p>We assess your facility and recommend the optimal resin system, tailored to your traffic, chemical exposure, and budget.</p>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
-            <h3>Preparation</h3>
-            <p>Our team preps the concrete substrate through cleaning, repairs, and profiling to ensure a perfect bond for the resin.</p>
+            <h3>Surface Preparation</h3>
+            <p>Remove contaminants, repair damage, and profile the concrete to ensure proper mechanical bonding of the coating.</p>
           </div>
           <div class="process-step">
             <div class="step-number">3</div>
-            <h3>Application</h3>
-            <p>We install the chosen resin flooring system with precision – whether epoxy, polyurethane, or a specialized coating – ensuring even coverage and thickness.</p>
+            <h3>Professional Application</h3>
+            <p>Install primer, broadcast aggregates (if needed), and top-coat layers using industrial-grade rollers and trowels for uniform coverage.</p>
           </div>
           <div class="process-step">
             <div class="step-number">4</div>
-            <h3>Finishing</h3>
-            <p>After curing, we perform a thorough quality check, leaving you with a polished, safe, and ready-to-use floor that meets all your requirements.</p>
+            <h3>Quality Assurance & Handover</h3>
+            <p>After curing, we perform adhesion tests and a final inspection to ensure your floor meets our rigorous performance standards.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Industries Served -->
     <section id="industries">
       <div class="container">
         <h2>Industries We Serve</h2>
         <div class="industries-list">
           <div class="industry-item">
-            <h3>Warehouses</h3>
-            <p>Durable, easy-to-clean floors designed for high-traffic and forklift use.</p>
+            <h3>Warehousing & Logistics</h3>
+            <p>Slip-resistant, abrasion-proof floors built for pallets, forklifts, and 24/7 operations.</p>
           </div>
           <div class="industry-item">
-            <h3>Food Processing</h3>
-            <p>Hygienic, slip-resistant coatings that meet industry safety standards.</p>
+            <h3>Food & Beverage Processing</h3>
+            <p>Hygienic, coved systems that resist acids, alkalis, fats, and frequent wash-downs.</p>
           </div>
           <div class="industry-item">
-            <h3>Pharmaceutical</h3>
-            <p>Seamless, chemical-resistant floors for sterile and controlled environments.</p>
+            <h3>Pharmaceutical & Laboratories</h3>
+            <p>Seamless, dust-free surfaces with chemical and static-dissipative options for clean rooms.</p>
           </div>
           <div class="industry-item">
-            <h3>Automotive</h3>
-            <p>Oil- and chemical-resistant resin floors that stand up to heavy machinery.</p>
+            <h3>Automotive & Manufacturing</h3>
+            <p>Oil-tight, impact-resistant coatings for engine bays, service ramps, and assembly lines.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Testimonials -->
     <section id="testimonials">
       <div class="container">
-        <h2>Testimonials</h2>
+        <h2>What Our Clients Say</h2>
         <div class="testimonials-list">
           <blockquote>
-            <p>Casian IRF transformed our warehouse floor. The new resin surface is top-notch quality, and the team completed the job on time and within budget.</p>
+            <p>"Casian IRF transformed our warehouse floor. Outstanding quality and professional service from start to finish."</p>
             <cite>– John D., Operations Manager</cite>
           </blockquote>
           <blockquote>
-            <p>Professional and reliable service. The epoxy flooring they installed in our workshop is sturdy and easy to clean. Highly recommended!</p>
+            <p>"Their epoxy system in our workshop is easy to clean and handles heavy machinery beautifully. Highly recommended!"</p>
             <cite>– Sarah L., Facility Engineer</cite>
           </blockquote>
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
       <div class="container">
-        <h2>Contact Us</h2>
-        <p>Ready to discuss your flooring project or have questions? Get in touch with us:</p>
+        <h2>Contact Casian IRF</h2>
+        <p>Ready to upgrade your floors? Contact us for a free, no-obligation consultation:</p>
         <div class="contact-info">
-          <p><strong>Phone:</strong> <a href="tel:+353000000000">+353 89 420 5742</a></p>
-          <p><strong>Email:</strong> <a href="mailto:info@casianirf.com">casianirf@gmail.com</a></p>
-          <p>We look forward to providing you with a durable and attractive flooring solution. Use the form to request a consultation or ask a question, and we'll respond promptly.</p>
+          <p><strong>Phone:</strong> <a href="tel:+353894205742">+353 89 420 5742</a></p>
+          <p><strong>Email:</strong> <a href="mailto:casianirf@gmail.com">casianirf@gmail.com</a></p>
+
         </div>
         <form class="contact-form" action="https://formspree.io/f/xvgronnn" method="POST">
           <div class="form-group">
@@ -179,22 +234,26 @@
             <textarea id="message" name="message" required></textarea>
           </div>
           <input type="hidden" name="_redirect" value="https://casianirf.com/thank-you.html" />
-          <input type="text" name="_gotcha" style="display:none">
+          <input type="text" name="_gotcha" style="display:none;" />
           <button type="submit" class="btn">Send Message</button>
         </form>
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-col">
-        <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
-        <p>Industrial Resin Flooring Solutions</p>
+        <a href="index.html">
+          <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
+        </a>
+        <p>Casian IRF — Industrial Resin Flooring Experts</p>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Phone: <a href="tel:+353000000000">+353 89 420 5742</a></p>
-        <p>Email: <a href="mailto:info@casianirf.com">casianirf@gmail.com</a></p>
+        <p><a href="tel:+353894205742">+353 89 420 5742</a></p>
+        <p><a href="mailto:casianirf@gmail.com">casianirf@gmail.com</a></p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
@@ -207,16 +266,19 @@
       <p class="copyright">© 2025 Casian IRF. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Scripts -->
   <script>
     function toggleNav() {
-      document.querySelector('header nav').classList.toggle('open');
+      document.querySelector('nav').classList.toggle('open');
     }
     (function() {
-      var currentSlide = 0, slides = document.querySelectorAll('.hero-slide'), total = slides.length;
-      if (total > 1) setInterval(function() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % total;
-        slides[currentSlide].classList.add('active');
+      let idx = 0;
+      const slides = document.querySelectorAll('.hero-slide');
+      setInterval(() => {
+        slides[idx].classList.remove('active');
+        idx = (idx + 1) % slides.length;
+        slides[idx].classList.add('active');
       }, 5000);
     })();
   </script>

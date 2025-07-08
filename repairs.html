@@ -4,20 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Repairs & Maintenance - Casian IRF" />
-  <title>Repairs &amp; Maintenance | Casian IRF</title>
+
+  <!-- SEO Meta Tags -->
+  <title>Repairs &amp; Maintenance | Casian IRF – Industrial Resin Floor Care Ireland</title>
+  <meta name="description"
+        content="Casian IRF offers expert resin floor repairs and preventive maintenance across Ireland—crack injections, patching, seal-coat renewal, overlays and bespoke service contracts to extend floor life and minimize downtime. Request your free quote today!" />
+
+  <!-- JSON-LD for Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Casian IRF",
+        "url": "https://www.casianirf.ie",
+        "logo": "https://www.casianirf.ie/images/aa.png",
+        "sameAs": [
+          "https://www.facebook.com/casianirf",
+          "https://www.linkedin.com/company/casianirf"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Casian IRF",
+        "description": "Specialists in resin floor repairs and maintenance for industrial and commercial facilities in Ireland",
+        "url": "https://www.casianirf.ie",
+        "telephone": "+353894205742",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Your Street Address",
+          "addressLocality": "Dublin",
+          "addressCountry": "IE"
+        },
+        "openingHours": [
+          "Mo-Fr 08:00-18:00"
+        ]
+      }
+    ]
+  }
+  </script>
 
   <!-- Font Awesome 6 Free -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
-
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet"
   />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 
   <style>
     :root {
@@ -43,7 +82,7 @@
     a { text-decoration: none; }
     .container { width: 90%; max-width: 1200px; margin: 0 auto; }
 
-    /* ——— Header & Nav ——— */
+    /* Header & Nav */
     header {
       background: var(--primary-color);
       position: fixed; top: 0; width: 100%;
@@ -80,120 +119,97 @@
     }
     main { margin-top: 100px; }
 
-    /* ——— Intro ——— */
+    /* Intro Section */
     .intro-section {
       background: var(--section-bg-alt);
       padding: 4rem 0;
       border-top: 6px solid var(--accent-color);
     }
     .intro-content {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;
+      max-width: 1200px; margin: 0 auto;
     }
     .intro-text {
-      flex: 1 1 400px;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      flex: 1 1 400px; background: #fff; padding: 2rem;
+      border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
     .intro-text h1 { margin-bottom: 0.5rem; }
     .intro-text p { margin-bottom: 1.5rem; }
-    .intro-text .btn { margin-top: 0.5rem; }
-    .intro-gallery {
-      flex: 1 1 400px;
-      position: relative;
-      max-width: 100%;
+    .intro-text .btn {
+      display: inline-block; background: var(--accent-color);
+      color: #fff; padding: 0.75rem 1.5rem; border-radius: 4px;
+      transition: background 0.3s;
     }
-    .intro-gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      display: none;
-      object-fit: cover;
-      transition: opacity 0.5s ease, box-shadow 0.3s ease;
-    }
-    .intro-gallery img.active {
-      display: block;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+    .intro-text .btn:hover { background: var(--accent-hover); }
 
-    /* ——— Benefits ——— */
+    .intro-gallery {
+      flex: 1 1 400px; max-width: 100%; position: relative;
+    }
+    .img-box {
+      position: relative; width: 100%; aspect-ratio: 4/3;
+      overflow: hidden; border-radius: 8px;
+    }
+    .img-box img {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      object-fit: cover; transition: opacity 0.5s ease;
+      display: none;
+    }
+    .img-box img.active { display: block; }
+
+    /* Benefits Section */
     .benefits-section { padding: 4rem 0; }
     .benefits-section h2 { text-align: center; margin-bottom: 2rem; }
     .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-      gap: 1.5rem;
-      max-width: 900px;
-      margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+      gap: 1.5rem; max-width: 900px; margin: 0 auto;
     }
     .benefit-card {
-      background: #fff;
-      padding: 1.5rem;
-      border-left: 4px solid var(--accent-color);
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff; padding: 1.5rem; border-left: 4px solid var(--accent-color);
+      border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .benefit-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     }
 
-    /* ——— Applications ——— */
+    /* Applications Section */
     .applications-section {
-      background: var(--section-bg-alt);
-      padding: 4rem 0;
+      background: var(--section-bg-alt); padding: 4rem 0;
       border-top: 6px solid var(--accent-color);
     }
-    .applications-section h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+    .applications-section h2 { text-align: center; margin-bottom: 2rem; }
     .applications-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-      gap: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 2rem; max-width: 1000px; margin: 0 auto;
     }
     .application-card {
-      background: #fff;
-      padding: 2rem 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff; padding: 2rem 1.5rem; border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .application-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
     .application-icon {
-      font-size: 2.5rem;
-      color: var(--accent-color);
-      margin-bottom: 0.75rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-size: 2.5rem; color: var(--accent-color);
+      margin-bottom: 0.75rem; display: flex; justify-content: center; align-items: center;
     }
 
-    /* ——— CTA & Footer ——— */
+    /* CTA Section */
     .cta-section {
       padding: 3rem 1rem; text-align: center; background: #fff;
     }
     .cta-section .btn {
-      font-size: 1.1rem; padding: 16px 32px;
+      background: var(--accent-color); color: #fff; padding: 0.75rem 1.5rem;
+      border-radius: 4px; transition: background 0.3s;
     }
+    .cta-section .btn:hover { background: var(--accent-hover); }
+
+    /* Footer */
     footer {
-      background: var(--primary-color);
-      color: #ccc;
-      padding: 20px 0;
+      background: var(--primary-color); color: #ccc; padding: 20px 0;
     }
     footer .container {
       display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;
@@ -202,36 +218,13 @@
     footer .copyright {
       width: 100%; text-align: center; margin-top: 10px; font-size: 0.8em;
     }
-     .img-box {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      overflow: hidden;
-      border-radius: 8px;
-    }
-    .img-box img {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      object-position: center;
-      transition: opacity 0.5s ease, box-shadow 0.3s ease;
-      display: none;
-    }
-    .img-box img.active {
-      display: block;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
   </style>
 </head>
 
 <body>
-
   <header>
     <div class="container">
-      <a href="index.html">
-        <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
-      </a>
+      <a href="index.html"><img src="images/aa.png" alt="Casian IRF Logo" class="logo"/></a>
       <nav>
         <button class="nav-toggle" onclick="toggleNav()">☰</button>
         <ul class="nav-links">
@@ -253,15 +246,18 @@
         <div class="intro-text">
           <h1>Repairs &amp; Maintenance</h1>
           <p>
-            Keep your industrial floors performing like new—Casian IRF offers expert repairs and routine maintenance to restore damaged surfaces, seal cracks, and extend lifespan. Our tailored programs minimize downtime and protect your investment.
+            Keep your industrial floors performing like new—Casian IRF offers
+            expert repairs and routine maintenance to restore damaged surfaces,
+            seal cracks, and extend lifespan. Our tailored programs minimize
+            downtime and protect your investment.
           </p>
           <a href="index.html#contact" class="btn">Request a Free Quote</a>
         </div>
         <div class="intro-gallery">
           <div class="img-box">
-          <img src="images/9.jpg" class="active" alt="Repairs Slide 1">
-          <img src="images/9.jpg" alt="Repairs Slide 2">
-          <img src="images/9.jpg" alt="Repairs Slide 3">
+            <img src="images/9.jpg" class="active" alt="Floor Repair Slide 1">
+            <img src="images/9.jpg" alt="Floor Repair Slide 2">
+            <img src="images/9.jpg" alt="Floor Repair Slide 3">
           </div>
         </div>
       </div>
@@ -273,7 +269,7 @@
         <h2>Why Regular Maintenance Matters</h2>
         <div class="benefits-grid">
           <div class="benefit-card"><h3>Prevents costly full replacements</h3></div>
-          <div class="benefit-card"><h3>Eliminates trip & slip hazards</h3></div>
+          <div class="benefit-card"><h3>Eliminates trip &amp; slip hazards</h3></div>
           <div class="benefit-card"><h3>Maintains chemical resistance</h3></div>
           <div class="benefit-card"><h3>Extends service life</h3></div>
           <div class="benefit-card"><h3>Optimizes facility uptime</h3></div>
@@ -287,46 +283,34 @@
         <h2>Our Repair &amp; Maintenance Services</h2>
         <div class="applications-grid">
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-wrench"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-wrench"></i></div>
             <h3>Crack Repairs</h3>
             <p>Seamless epoxy injections to seal structural cracks.</p>
           </div>
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-hammer"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-hammer"></i></div>
             <h3>Surface Patching</h3>
             <p>Rapid-setting mortars to repair spalls and gouges.</p>
           </div>
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-screwdriver-wrench"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
             <h3>Seal Coat Renewal</h3>
             <p>Reapply UV-stable sealers to refresh gloss and protection.</p>
           </div>
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-broom"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-broom"></i></div>
             <h3>Preventive Maintenance</h3>
             <p>Scheduled inspections, clean-and-coat treatments, and tune-ups.</p>
           </div>
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-industry"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-industry"></i></div>
             <h3>Industrial Overlays</h3>
-            <p>Apply new thin-film systems over existing substrate for a fresh surface.</p>
+            <p>Thin-film systems applied over existing substrate for a fresh surface.</p>
           </div>
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-calendar-check"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-calendar-check"></i></div>
             <h3>Maintenance Contracts</h3>
-            <p>Custom service agreements with priority scheduling and reporting.</p>
+            <p>Custom service agreements with priority scheduling and detailed reporting.</p>
           </div>
         </div>
       </div>
@@ -340,21 +324,21 @@
     </section>
   </main>
 
- 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-col">
-        <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
+        <img src="images/aa.png" alt="Casian IRF Logo" class="logo"/>
         <p>Industrial Resin Flooring Solutions</p>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Phone: <a href="tel:+353000000000">+353 89 420 5742</a></p>
-        <p>Email: <a href="mailto:info@casianirf.com">casianirf@gmail.com</a></p>
+        <p><a href="tel:+353894205742">+353 89 420 5742</a></p>
+        <p><a href="mailto:casianirf@gmail.com">casianirf@gmail.com</a></p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
-         <p><a href="index.html#about">About Us</a></p>
+        <p><a href="index.html#about">About Us</a></p>
         <p><a href="index.html#services">Services</a></p>
         <p><a href="index.html#contact">Contact Us</a></p>
       </div>

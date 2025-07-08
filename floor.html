@@ -4,8 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Floor Preparation - Casian IRF" />
-  <title>Floor Preparation | Casian IRF</title>
+
+  <!-- SEO Meta Tags -->
+  <title>Floor Preparation | Casian IRF – Industrial Resin Flooring Ireland</title>
+  <meta name="description"
+        content="Casian IRF provides expert floor preparation services across Ireland—including shot blasting, diamond grinding, scarifying, moisture testing, self-leveling and priming—to ensure optimal adhesion and a flawless, long-lasting resin flooring finish. Request your free quote today!" />
+
+  <!-- JSON-LD for Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Casian IRF",
+        "url": "https://www.casianirf.ie",
+        "logo": "https://www.casianirf.ie/images/aa.png",
+        "sameAs": [
+          "https://www.facebook.com/casianirf",
+          "https://www.linkedin.com/company/casianirf"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Casian IRF",
+        "description": "Professional floor preparation and industrial resin flooring contractors serving Ireland",
+        "url": "https://www.casianirf.ie",
+        "telephone": "+353894205742",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Your Street Address",
+          "addressLocality": "Dublin",
+          "addressCountry": "IE"
+        },
+        "openingHours": [
+          "Mo-Fr 08:00-18:00"
+        ]
+      }
+    ]
+  }
+  </script>
 
   <!-- Font Awesome 6 Free -->
   <link
@@ -13,12 +51,15 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
 
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet"
   />
 
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  
   <style>
     :root {
       --primary-color: #2c3e50;
@@ -40,10 +81,10 @@
     h2 { font-size: 2rem; margin-bottom: 1rem; }
     h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
     p { font-size: 1.1rem; color: #555; margin-bottom: 1rem; }
-    a { text-decoration: none; }
+    a { text-decoration: none; color: var(--primary-color); }
     .container { width: 90%; max-width: 1200px; margin: 0 auto; }
 
-    /* ——— Header & Nav ——— */
+    /* Header & Nav */
     header {
       background: var(--primary-color);
       position: fixed; top: 0; width: 100%;
@@ -80,158 +121,116 @@
     }
     main { margin-top: 100px; }
 
-    /* ——— Intro ——— */
+    /* Intro Section */
     .intro-section {
       background: var(--section-bg-alt);
       padding: 4rem 0;
       border-top: 6px solid var(--accent-color);
     }
     .intro-content {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;
+      max-width: 1200px; margin: 0 auto;
     }
     .intro-text {
-      flex: 1 1 400px;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      flex: 1 1 400px; background: #fff; padding: 2rem;
+      border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
     .intro-text h1 { margin-bottom: 0.5rem; }
     .intro-text p { margin-bottom: 1.5rem; }
-    .intro-text .btn { margin-top: 0.5rem; }
-    .intro-gallery {
-      flex: 1 1 400px;
-      position: relative;
-      max-width: 100%;
+    .intro-text .btn {
+      display: inline-block; background: var(--accent-color);
+      color: #fff; padding: 0.75rem 1.5rem; border-radius: 4px;
+      transition: background 0.3s;
     }
-    .intro-gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      display: none;
-      object-fit: cover;
-      transition: opacity 0.5s ease, box-shadow 0.3s ease;
-    }
-    .intro-gallery img.active {
-      display: block;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+    .intro-text .btn:hover { background: var(--accent-hover); }
 
-    /* ——— Benefits ——— */
+    .intro-gallery {
+      flex: 1 1 400px; max-width: 100%; position: relative;
+    }
+    .img-box {
+      position: relative; width: 100%; aspect-ratio: 4/3;
+      overflow: hidden; border-radius: 8px;
+    }
+    .img-box img {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      transition: opacity 0.5s ease;
+      display: none;
+    }
+    .img-box img.active { display: block; }
+
+    /* Benefits Section */
     .benefits-section { padding: 4rem 0; }
     .benefits-section h2 { text-align: center; margin-bottom: 2rem; }
     .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-      gap: 1.5rem;
-      max-width: 900px;
-      margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+      gap: 1.5rem; max-width: 900px; margin: 0 auto;
     }
     .benefit-card {
-      background: #fff;
-      padding: 1.5rem;
-      border-left: 4px solid var(--accent-color);
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff; padding: 1.5rem; border-left: 4px solid var(--accent-color);
+      border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .benefit-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     }
 
-    /* ——— Applications ——— */
+    /* Applications Section */
     .applications-section {
-      background: var(--section-bg-alt);
-      padding: 4rem 0;
+      background: var(--section-bg-alt); padding: 4rem 0;
       border-top: 6px solid var(--accent-color);
     }
-    .applications-section h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+    .applications-section h2 { text-align: center; margin-bottom: 2rem; }
     .applications-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-      gap: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 2rem; max-width: 1000px; margin: 0 auto;
     }
     .application-card {
-      background: #fff;
-      padding: 2rem 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff; padding: 2rem 1.5rem; border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .application-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
     .application-icon {
-      font-size: 2.5rem;
-      color: var(--accent-color);
-      margin-bottom: 0.75rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-size: 2.5rem; color: var(--accent-color);
+      margin-bottom: 0.75rem; display: flex;
+      justify-content: center; align-items: center;
     }
 
-    /* ——— CTA & Footer ——— */
+    /* CTA Section */
     .cta-section {
       padding: 3rem 1rem; text-align: center; background: #fff;
     }
     .cta-section .btn {
-      font-size: 1.1rem; padding: 16px 32px;
+      background: var(--accent-color); color: #fff;
+      padding: 0.75rem 1.5rem; border-radius: 4px;
+      transition: background 0.3s;
     }
+    .cta-section .btn:hover { background: var(--accent-hover); }
+
+    /* Footer */
     footer {
-      background: var(--primary-color);
-      color: #ccc;
-      padding: 20px 0;
+      background: var(--primary-color); color: #ccc; padding: 20px 0;
     }
     footer .container {
-      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;
+      display:
+flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;
     }
     footer a { color: #ccc; text-decoration: none; }
     footer .copyright {
       width: 100%; text-align: center; margin-top: 10px; font-size: 0.8em;
     }
-     .img-box {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      overflow: hidden;
-      border-radius: 8px;
-    }
-    .img-box img {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      object-position: center;
-      transition: opacity 0.5s ease, box-shadow 0.3s ease;
-      display: none;
-    }
-    .img-box img.active {
-      display: block;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
   </style>
 </head>
 
 <body>
-
   <header>
     <div class="container">
-      <a href="index.html">
-        <img src="images/aa.png" alt="Casian IRF Logo" class="logo" />
-      </a>
+      <a href="index.html"><img src="images/aa.png" alt="Casian IRF Logo" class="logo"/></a>
       <nav>
         <button class="nav-toggle" onclick="toggleNav()">☰</button>
         <ul class="nav-links">
@@ -253,15 +252,17 @@
         <div class="intro-text">
           <h1>Floor Preparation</h1>
           <p>
-            Proper floor preparation is the foundation of any high-performance resin system. Casian IRF’s expert team removes old coatings, contaminants, and weak surface layers—and profiles concrete to achieve optimal adhesion and a perfectly level substrate.
+            Proper floor preparation is the foundation of any high-performance resin system.
+            Casian IRF’s expert team removes old coatings, contaminants, and weak surface layers
+            &mdash; and profiles concrete to achieve optimal adhesion and a perfectly level substrate.
           </p>
           <a href="index.html#contact" class="btn">Request a Free Quote</a>
         </div>
         <div class="intro-gallery">
           <div class="img-box">
-          <img src="images/prep1.jpg" class="active" alt="Preparation Slide 1">
-          <img src="images/prep1.jpg" alt="Preparation Slide 2">
-          <img src="images/prep1.jpg" alt="Preparation Slide 3">
+            <img src="images/prep1.jpg" class="active" alt="Preparation Slide 1">
+            <img src="images/prep1.jpg" alt="Preparation Slide 2">
+            <img src="images/prep1.jpg" alt="Preparation Slide 3">
           </div>
         </div>
       </div>
@@ -272,7 +273,7 @@
       <div class="container">
         <h2>Why Floor Preparation Matters</h2>
         <div class="benefits-grid">
-          <div class="benefit-card"><h3>Removes contaminants & weak layers</h3></div>
+          <div class="benefit-card"><h3>Removes contaminants &amp; weak layers</h3></div>
           <div class="benefit-card"><h3>Ensures maximum coating adhesion</h3></div>
           <div class="benefit-card"><h3>Corrects surface irregularities</h3></div>
           <div class="benefit-card"><h3>Creates a dust-free profile</h3></div>
@@ -287,46 +288,34 @@
         <h2>Our Preparation Services</h2>
         <div class="applications-grid">
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-tools"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-tools"></i></div>
             <h3>Shot Blasting</h3>
-            <p>High-powered grit blast to remove old coatings and profile concrete.</p>
+            <p>High-powered grit blasting to remove old coatings and profile concrete for superior mechanical bond.</p>
           </div>
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-gem"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-gem"></i></div>
             <h3>Diamond Grinding</h3>
-            <p>Precision grinding to smooth, level, and open concrete pores.</p>
+            <p>Precision grinding to smooth and level surfaces while opening pores for optimal adhesion.</p>
           </div>
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-scissors"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-scissors"></i></div>
             <h3>Scarifying</h3>
-            <p>Aggressive mechanical scarifier for heavy removal and profiling.</p>
+            <p>Aggressive mechanical scarification for heavy-duty removal of coatings and contaminants.</p>
           </div>
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-tint"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-tint"></i></div>
             <h3>Moisture Testing</h3>
-            <p>Rapid in-situ RH & moisture vapor emission rate tests.</p>
+            <p>Rapid in-situ relative humidity and moisture vapor emission rate assessments to prevent failures.</p>
           </div>
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-fill-drip"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-fill-drip"></i></div>
             <h3>Self-Leveling</h3>
-            <p>Flowable levelling compounds for a flat, even substrate.</p>
+            <p>Flowable leveling compounds for a perfectly flat and even substrate before coating.</p>
           </div>
           <div class="application-card">
-            <div class="application-icon">
-              <i class="fa-solid fa-paint-roller"></i>
-            </div>
+            <div class="application-icon"><i class="fa-solid fa-paint-roller"></i></div>
             <h3>Priming</h3>
-            <p>High-penetration primers to seal and prepare porosity.</p>
+            <p>Penetrating primers to seal concrete, reduce porosity, and ensure uniform topcoat appearance.</p>
           </div>
         </div>
       </div>
@@ -340,7 +329,7 @@
     </section>
   </main>
 
- 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-col">
@@ -349,12 +338,12 @@
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Phone: <a href="tel:+353000000000">+353 89 420 5742</a></p>
-        <p>Email: <a href="mailto:info@casianirf.com">casianirf@gmail.com</a></p>
+        <p><a href="tel:+353894205742">+353 89 420 5742</a></p>
+        <p><a href="mailto:casianirf@gmail.com">casianirf@gmail.com</a></p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
-         <p><a href="index.html#about">About Us</a></p>
+        <p><a href="index.html#about">About Us</a></p>
         <p><a href="index.html#services">Services</a></p>
         <p><a href="index.html#contact">Contact Us</a></p>
       </div>
