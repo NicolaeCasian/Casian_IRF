@@ -225,8 +225,15 @@ section { padding: 72px 0; scroll-margin-top: calc(var(--header-h) + 10px); }
 .site-footer .logo img { height: 44px; margin-bottom: 12px; }
 .copyright { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 36px; padding: 16px 0; font-size: 0.85rem; color: #8f9aa5; text-align: center; }
 
-/* Mobile call bar */
+/* Mobile call bar + WhatsApp */
 .mobile-bar { display: none; }
+.wa-float {
+  position: fixed; right: 22px; bottom: 22px; z-index: 999;
+  width: 58px; height: 58px; border-radius: 50%; background: #25d366; color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 2rem; text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25); transition: transform 0.2s ease;
+}
+.wa-float:hover { transform: scale(1.07); }
 
 @media (max-width: 1000px) {
   .header-phone { display: none; }
@@ -247,13 +254,15 @@ section { padding: 72px 0; scroll-margin-top: calc(var(--header-h) + 10px); }
   .split, .contact-wrap, .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
   .mobile-bar {
-    display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0;
     z-index: 1000; box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
     padding-bottom: env(safe-area-inset-bottom, 0px); background: var(--navy-dark);
   }
-  .mobile-bar a { display: flex; align-items: center; justify-content: center; gap: 8px; height: 64px; font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; text-decoration: none; font-size: 1rem; }
+  .mobile-bar a { display: flex; align-items: center; justify-content: center; gap: 8px; height: 64px; font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; text-decoration: none; font-size: 0.92rem; }
   .mobile-bar .call { background: var(--navy-dark); color: #fff; }
+  .mobile-bar .wa { background: #1f9d55; color: #fff; }
   .mobile-bar .quote { background: var(--accent); color: var(--navy-dark); }
+  .wa-float { display: none !important; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

@@ -50,7 +50,7 @@
         "url": "https://casianirf.com/",
         "logo": "https://casianirf.com/images/aa.png",
         "image": "https://casianirf.com/images/og-image.jpg",
-        "telephone": "+353894205742",
+        "telephone": "+353838366855",
         "email": "casianirf@gmail.com",
         "address": {
           "@type": "PostalAddress",
@@ -180,7 +180,7 @@
         </ul>
       </nav>
       <div class="header-actions">
-        <a class="header-phone" href="tel:+353894205742"><i class="fa-solid fa-phone"></i> 089 420 5742</a>
+        <a class="header-phone" href="tel:+353838366855"><i class="fa-solid fa-phone"></i> 083 836 6855</a>
         <a class="btn" href="index.html#contact">Free Quote</a>
         <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">☰</button>
       </div>
@@ -196,7 +196,7 @@
           <p>Clear, durable line markings are essential for safe traffic flow and organisation. Casian IRF marks out parking bays, directional arrows, pedestrian crossings, forklift routes and safety zones using high-visibility, long-lasting marking systems.</p>
           <div class="btn-row">
             <a class="btn" href="index.html#contact">Request a free quote</a>
-            <a class="btn" style="background:var(--navy);color:#fff" href="tel:+353894205742"><i class="fa-solid fa-phone"></i> 089 420 5742</a>
+            <a class="btn" style="background:var(--navy);color:#fff" href="tel:+353838366855"><i class="fa-solid fa-phone"></i> 083 836 6855</a>
           </div>
         </div>
         <div class="slideshow" data-slides="4000">
@@ -259,7 +259,8 @@
         <p>Tell us about your floor and we’ll come back to you with advice and a quote. We work on sites of every size, anywhere in Ireland.</p>
         <div class="btn-row">
           <a class="btn" href="index.html#contact">Request a free quote</a>
-          <a class="btn btn-outline" href="tel:+353894205742"><i class="fa-solid fa-phone"></i> 089 420 5742</a>
+          <a class="btn btn-outline" href="tel:+353838366855"><i class="fa-solid fa-phone"></i> 083 836 6855</a>
+          <a class="btn btn-outline" href="https://wa.me/353838366855?text=Hi%20Casian%20IRF%2C%20I%27d%20like%20a%20quote%20for%20a%20floor." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
         </div>
       </div>
     </section>
@@ -317,7 +318,8 @@
         <div>
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:+353894205742"><i class="fa-solid fa-phone"></i> 089 420 5742</a></li>
+            <li><a href="tel:+353838366855"><i class="fa-solid fa-phone"></i> 083 836 6855</a></li>
+            <li><a href="https://wa.me/353838366855?text=Hi%20Casian%20IRF%2C%20I%27d%20like%20a%20quote%20for%20a%20floor." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a></li>
             <li><a href="mailto:casianirf@gmail.com"><i class="fa-solid fa-envelope"></i> casianirf@gmail.com</a></li>
             <li><i class="fa-solid fa-location-dot"></i> Ashbourne, Co. Meath</li>
             <li><i class="fa-regular fa-clock"></i> Mon–Fri, 8am–6pm</li>
@@ -329,9 +331,12 @@
   </footer>
 
   <div class="mobile-bar">
-    <a class="call" href="tel:+353894205742"><i class="fa-solid fa-phone"></i> Call us</a>
-    <a class="quote" href="index.html#contact"><i class="fa-solid fa-file-pen"></i> Free quote</a>
+    <a class="call" href="tel:+353838366855"><i class="fa-solid fa-phone"></i> Call</a>
+    <a class="wa" href="https://wa.me/353838366855?text=Hi%20Casian%20IRF%2C%20I%27d%20like%20a%20quote%20for%20a%20floor." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    <a class="quote" href="index.html#contact"><i class="fa-solid fa-file-pen"></i> Quote</a>
   </div>
+
+  <a class="wa-float" href="https://wa.me/353838366855?text=Hi%20Casian%20IRF%2C%20I%27d%20like%20a%20quote%20for%20a%20floor." target="_blank" rel="noopener" aria-label="Message us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
   <script>
     (function () {
@@ -354,6 +359,9 @@
       });
     document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
       a.addEventListener('click', function () { if (window.gtag) gtag('event', 'phone_click', { link_url: a.href }); });
+    });
+    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function (a) {
+      a.addEventListener('click', function () { if (window.gtag) gtag('event', 'whatsapp_click'); });
     });
     })();
   </script>
