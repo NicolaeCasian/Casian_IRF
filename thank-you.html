@@ -140,10 +140,10 @@
         }, parseInt(box.getAttribute('data-slides'), 10) || 5000);
       });
     document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
-      a.addEventListener('click', function () { if (window.gtag) gtag('event', 'phone_click', { link_url: a.href }); });
+      a.addEventListener('click', function () { if (window.gtag) gtag('event', 'phone_click', { link_url: a.href }); gtag('event', 'conversion', { send_to: 'AW-17941246362/EaFqCOTp1ZsdEJrjhutC' }); });
     });
     document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function (a) {
-      a.addEventListener('click', function () { if (window.gtag) gtag('event', 'whatsapp_click'); });
+      a.addEventListener('click', function () { if (window.gtag) gtag('event', 'whatsapp_click'); gtag('event', 'conversion', { send_to: 'AW-17941246362/IhH7CJOFzJsdEJrjhutC' }); });
     });
     })();
   </script>
