@@ -20,8 +20,11 @@
   <meta name="theme-color" content="#2c3e50">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+  <link rel="preload" as="image" href="images/IMG-20250524-WA0094-800.webp" imagesrcset="images/IMG-20250524-WA0094-800.webp 800w, images/IMG-20250524-WA0094.webp 1600w" imagesizes="100vw" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17941246362"></script>
@@ -171,10 +174,10 @@
   <main id="main">
     <section class="hero" aria-label="Introduction">
       <div class="hero-slides" data-slides="5000">
-        <img src="images/IMG-20250524-WA0094.jpg" alt="Grey resin warehouse floor with white line markings" width="1600" height="900" class="active" fetchpriority="high">
-        <img src="images/qq4.jpg" alt="Red resin floor with stainless steel drainage channel" width="1600" height="900" loading="lazy" decoding="async">
-        <img src="images/red-anti-slip-resin-floor.jpg" alt="Red anti-slip resin floor with a high-gloss finish" width="675" height="1200" loading="lazy" decoding="async">
-        <img src="images/IMG-20250524-WA0061.jpg" alt="Blue speckled resin floor in a production area" width="1600" height="900" loading="lazy" decoding="async">
+        <img src="images/IMG-20250524-WA0094.webp" srcset="images/IMG-20250524-WA0094-800.webp 800w, images/IMG-20250524-WA0094.webp 1600w" sizes="100vw" alt="Grey resin warehouse floor with white line markings" width="1600" height="900" class="active" fetchpriority="high">
+        <img src="images/qq4.webp" srcset="images/qq4-800.webp 800w, images/qq4.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Red resin floor with stainless steel drainage channel" width="1600" height="900" loading="lazy" decoding="async">
+        <img src="images/red-anti-slip-resin-floor.webp" alt="Red anti-slip resin floor with a high-gloss finish" width="675" height="1200" loading="lazy" decoding="async">
+        <img src="images/IMG-20250524-WA0061.webp" srcset="images/IMG-20250524-WA0061-800.webp 800w, images/IMG-20250524-WA0061.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Blue speckled resin floor in a production area" width="1600" height="900" loading="lazy" decoding="async">
       </div>
       <div class="hero-content">
         <p class="eyebrow">Casian IRF · Industrial Resin Flooring</p>
@@ -205,7 +208,7 @@
         <p class="lead center">From surface preparation to the final topcoat, we handle the whole job, choosing the right system for your traffic, chemicals, temperatures and timeline.</p>
         <div class="grid grid-3">
           <article class="card">
-            <img src="images/epo2.jpg" alt="Grey epoxy resin floor in a steel-framed warehouse" width="1200" height="1600" class="card-img" loading="lazy" decoding="async">
+            <img src="images/epo2.webp" srcset="images/epo2-800.webp 800w, images/epo2.webp 1200w" sizes="(max-width: 700px) 100vw, 600px" alt="Grey epoxy resin floor in a steel-framed warehouse" width="1200" height="1600" class="card-img" loading="lazy" decoding="async">
             <div class="card-body">
               <h3>Epoxy Flooring</h3>
               <p>Hard-wearing epoxy resin floors for warehouses, factories, kitchens and workshops: forklift-ready and chemical resistant.</p>
@@ -213,7 +216,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/poly2.jpg" alt="Light grey polyurethane resin floor in an underground plant area" width="1200" height="1600" class="card-img" loading="lazy" decoding="async">
+            <img src="images/poly2.webp" srcset="images/poly2-800.webp 800w, images/poly2.webp 1200w" sizes="(max-width: 700px) 100vw, 600px" alt="Light grey polyurethane resin floor in an underground plant area" width="1200" height="1600" class="card-img" loading="lazy" decoding="async">
             <div class="card-body">
               <h3>Polyurethane Flooring</h3>
               <p>Flexible, UV-stable polyurethane systems for thermal shock, wet process areas and high-impact zones.</p>
@@ -221,7 +224,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/prep1.jpg" alt="Diamond grinding machine preparing a concrete floor" width="900" height="750" class="card-img" loading="lazy" decoding="async">
+            <img src="images/prep1.webp" alt="Diamond grinding machine preparing a concrete floor" width="900" height="750" class="card-img" loading="lazy" decoding="async">
             <div class="card-body">
               <h3>Floor Preparation</h3>
               <p>Shot-blasting, diamond grinding, moisture testing and levelling: the groundwork every resin floor depends on.</p>
@@ -229,7 +232,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/9.jpg" alt="Cracks in a concrete floor repaired with resin mortar" width="1600" height="900" class="card-img" loading="lazy" decoding="async">
+            <img src="images/9.webp" srcset="images/9-800.webp 800w, images/9.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Cracks in a concrete floor repaired with resin mortar" width="1600" height="900" class="card-img" loading="lazy" decoding="async">
             <div class="card-body">
               <h3>Repairs &amp; Maintenance</h3>
               <p>Crack repairs, spall patching, seal-coat renewals and maintenance contracts to extend floor life.</p>
@@ -237,7 +240,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/MMA-application.jpg" alt="MMA resin being rolled onto a prepared floor" width="980" height="647" class="card-img" loading="lazy" decoding="async">
+            <img src="images/MMA-application.webp" srcset="images/MMA-application-800.webp 800w, images/MMA-application.webp 980w" sizes="(max-width: 700px) 100vw, 600px" alt="MMA resin being rolled onto a prepared floor" width="980" height="647" class="card-img" loading="lazy" decoding="async">
             <div class="card-body">
               <h3>MMA Flooring</h3>
               <p>Rapid-cure methyl methacrylate systems for minimal downtime, even in cold stores and low temperatures.</p>
@@ -245,7 +248,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/p2.jpg" alt="Yellow hatched safety markings on a warehouse floor" width="1600" height="900" class="card-img" loading="lazy" decoding="async">
+            <img src="images/p2.webp" srcset="images/p2-800.webp 800w, images/p2.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Yellow hatched safety markings on a warehouse floor" width="1600" height="900" class="card-img" loading="lazy" decoding="async">
             <div class="card-body">
               <h3>Parking &amp; Line Markings</h3>
               <p>Car park bays, forklift lanes, walkways and hazard zones marked in durable, high-visibility coatings.</p>
@@ -270,16 +273,16 @@
           </div>
         </div>
         <div class="gallery">
-          <figure class="big"><img src="images/qq4.jpg" alt="Red resin floor with stainless drainage channel" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Drainage channel</span>Red resin floor with stainless drainage channel</figcaption></figure>
-          <figure class="tall vid"><video src="images/grey-flake-resin-floor.mp4" poster="images/grey-flake-resin-floor-poster.jpg" muted loop playsinline autoplay preload="none" aria-label="Grey flake resin floor, just finished"></video><span class="play" aria-hidden="true"><i class="fa-solid fa-play"></i></span><figcaption><span class="ptag">Video</span>Grey flake resin floor, just finished</figcaption></figure>
-          <figure class="tall"><img src="images/red-anti-slip-resin-floor.jpg" alt="Red anti-slip resin floor" width="675" height="1200" loading="lazy" decoding="async"><figcaption><span class="ptag">Anti-slip finish</span>Red anti-slip resin floor</figcaption></figure>
-          <figure class="wide"><img src="images/IMG-20250524-WA0094.jpg" alt="Grey floor with white line markings" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Line marking</span>Grey floor with white line markings</figcaption></figure>
-          <figure class="sq"><img src="images/IMG-20250524-WA0073.jpg" alt="Green resin floor with drainage" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Drainage</span>Green resin floor with drainage</figcaption></figure>
-          <figure class="sq"><img src="images/1.1.jpg" alt="Speckled resin floor in a washroom" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Washroom</span>Speckled resin floor in a washroom</figcaption></figure>
-          <figure class="tall"><img src="images/grey-flake-resin-floor.jpg" alt="Grey decorative flake resin floor" width="675" height="1200" loading="lazy" decoding="async"><figcaption><span class="ptag">Flake finish</span>Grey decorative flake resin floor</figcaption></figure>
-          <figure class="tall"><img src="images/red-resin-floor-edge.jpg" alt="Red anti-slip coat over prepared concrete" width="675" height="1200" loading="lazy" decoding="async"><figcaption><span class="ptag">Preparation</span>Red anti-slip coat over prepared concrete</figcaption></figure>
-          <figure class="wide"><img src="images/IMG-20250524-WA0071.jpg" alt="Dark grey floor with safety bollards" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Safety bollards</span>Dark grey floor with safety bollards</figcaption></figure>
-          <figure class="wide"><img src="images/IMG-20250524-WA0100.jpg" alt="Red resin floor in a process room" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Full room</span>Red resin floor in a process room</figcaption></figure>
+          <figure class="big"><img src="images/qq4.webp" srcset="images/qq4-800.webp 800w, images/qq4.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Red resin floor with stainless drainage channel" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Drainage channel</span>Red resin floor with stainless drainage channel</figcaption></figure>
+          <figure class="tall vid"><video src="images/grey-flake-resin-floor.mp4" poster="images/grey-flake-resin-floor-poster.webp" muted loop playsinline autoplay preload="none" aria-label="Grey flake resin floor, just finished"></video><span class="play" aria-hidden="true"><i class="fa-solid fa-play"></i></span><figcaption><span class="ptag">Video</span>Grey flake resin floor, just finished</figcaption></figure>
+          <figure class="tall"><img src="images/red-anti-slip-resin-floor.webp" alt="Red anti-slip resin floor" width="675" height="1200" loading="lazy" decoding="async"><figcaption><span class="ptag">Anti-slip finish</span>Red anti-slip resin floor</figcaption></figure>
+          <figure class="wide"><img src="images/IMG-20250524-WA0094.webp" srcset="images/IMG-20250524-WA0094-800.webp 800w, images/IMG-20250524-WA0094.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Grey floor with white line markings" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Line marking</span>Grey floor with white line markings</figcaption></figure>
+          <figure class="sq"><img src="images/IMG-20250524-WA0073.webp" srcset="images/IMG-20250524-WA0073-800.webp 800w, images/IMG-20250524-WA0073.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Green resin floor with drainage" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Drainage</span>Green resin floor with drainage</figcaption></figure>
+          <figure class="sq"><img src="images/1.1.webp" srcset="images/1.1-800.webp 800w, images/1.1.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Speckled resin floor in a washroom" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Washroom</span>Speckled resin floor in a washroom</figcaption></figure>
+          <figure class="tall"><img src="images/grey-flake-resin-floor.webp" alt="Grey decorative flake resin floor" width="675" height="1200" loading="lazy" decoding="async"><figcaption><span class="ptag">Flake finish</span>Grey decorative flake resin floor</figcaption></figure>
+          <figure class="tall"><img src="images/red-resin-floor-edge.webp" alt="Red anti-slip coat over prepared concrete" width="675" height="1200" loading="lazy" decoding="async"><figcaption><span class="ptag">Preparation</span>Red anti-slip coat over prepared concrete</figcaption></figure>
+          <figure class="wide"><img src="images/IMG-20250524-WA0071.webp" srcset="images/IMG-20250524-WA0071-800.webp 800w, images/IMG-20250524-WA0071.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Dark grey floor with safety bollards" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Safety bollards</span>Dark grey floor with safety bollards</figcaption></figure>
+          <figure class="wide"><img src="images/IMG-20250524-WA0100.webp" srcset="images/IMG-20250524-WA0100-800.webp 800w, images/IMG-20250524-WA0100.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Red resin floor in a process room" width="1600" height="900" loading="lazy" decoding="async"><figcaption><span class="ptag">Full room</span>Red resin floor in a process room</figcaption></figure>
         </div>
       </div>
     </section>
@@ -299,7 +302,7 @@
           </ul>
           <a class="btn" href="#contact">Talk to us about your floor</a>
         </div>
-        <img src="images/red-anti-slip-resin-floor.jpg" alt="High-gloss red anti-slip resin floor laid by Casian IRF" width="675" height="1200" class="about-img" loading="lazy" decoding="async">
+        <img src="images/red-anti-slip-resin-floor.webp" alt="High-gloss red anti-slip resin floor laid by Casian IRF" width="675" height="1200" class="about-img" loading="lazy" decoding="async">
       </div>
     </section>
 

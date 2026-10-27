@@ -20,8 +20,10 @@
   <meta name="theme-color" content="#2c3e50">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <link rel="stylesheet" href="styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17941246362"></script>
@@ -200,9 +202,9 @@
           </div>
         </div>
         <div class="slideshow" data-slides="4000">
-            <img src="images/13.jpg" alt="Blue MMA resin floor in a commercial corridor" width="900" height="1600" class="active" fetchpriority="high">
-            <img src="images/16.jpg" alt="Blue MMA resin floor in a service area" width="900" height="1600" loading="lazy" decoding="async">
-            <img src="images/MMA-application.jpg" alt="MMA resin being applied to a floor with a roller" width="980" height="647" loading="lazy" decoding="async">
+            <img src="images/13.webp" alt="Blue MMA resin floor in a commercial corridor" width="900" height="1600" class="active" fetchpriority="high">
+            <img src="images/16.webp" alt="Blue MMA resin floor in a service area" width="900" height="1600" loading="lazy" decoding="async">
+            <img src="images/MMA-application.webp" srcset="images/MMA-application-800.webp 800w, images/MMA-application.webp 980w" sizes="(max-width: 700px) 100vw, 600px" alt="MMA resin being applied to a floor with a roller" width="980" height="647" loading="lazy" decoding="async">
           </div>
       </div>
     </section>
@@ -269,7 +271,7 @@
         <h2 class="center">Related services</h2>
         <div class="grid grid-3" style="margin-top:2rem">
           <article class="card">
-            <img src="images/poly2.jpg" alt="Light grey polyurethane resin floor in an underground plant area" width="1200" height="1600" class="card-img" loading="lazy" decoding="async">
+            <img src="images/poly2.webp" srcset="images/poly2-800.webp 800w, images/poly2.webp 1200w" sizes="(max-width: 700px) 100vw, 600px" alt="Light grey polyurethane resin floor in an underground plant area" width="1200" height="1600" class="card-img" loading="lazy" decoding="async">
             <div class="card-body">
               <h3>Polyurethane Flooring</h3>
               <p>Flexible, UV-stable polyurethane systems for thermal shock, wet process areas and high-impact zones.</p>
@@ -277,7 +279,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/9.jpg" alt="Cracks in a concrete floor repaired with resin mortar" width="1600" height="900" class="card-img" loading="lazy" decoding="async">
+            <img src="images/9.webp" srcset="images/9-800.webp 800w, images/9.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Cracks in a concrete floor repaired with resin mortar" width="1600" height="900" class="card-img" loading="lazy" decoding="async">
             <div class="card-body">
               <h3>Repairs &amp; Maintenance</h3>
               <p>Crack repairs, spall patching, seal-coat renewals and maintenance contracts to extend floor life.</p>
@@ -285,7 +287,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/p2.jpg" alt="Yellow hatched safety markings on a warehouse floor" width="1600" height="900" class="card-img" loading="lazy" decoding="async">
+            <img src="images/p2.webp" srcset="images/p2-800.webp 800w, images/p2.webp 1600w" sizes="(max-width: 700px) 100vw, 600px" alt="Yellow hatched safety markings on a warehouse floor" width="1600" height="900" class="card-img" loading="lazy" decoding="async">
             <div class="card-body">
               <h3>Parking &amp; Line Markings</h3>
               <p>Car park bays, forklift lanes, walkways and hazard zones marked in durable, high-visibility coatings.</p>
