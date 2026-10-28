@@ -2,7 +2,7 @@
    Events: PageView (every page), Lead (thank-you page = form sent), Contact (phone or WhatsApp tap).
    To switch on: paste the Pixel ID from Meta Events Manager below. Empty ID = nothing loads, no banner. */
 (function () {
-  var PIXEL_ID = ''; // e.g. '123456789012345'
+  var PIXEL_ID = '1420181200320322';
   if (!PIXEL_ID) return;
 
   var KEY = 'cirf_cookie_consent';
