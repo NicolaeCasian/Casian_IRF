@@ -312,3 +312,22 @@ section { padding: 72px 0; scroll-margin-top: calc(var(--header-h) + 10px); }
   .cw-link { width: 100%; justify-content: center; }
 }
 .split img.about-img { aspect-ratio: 4 / 5; max-height: 560px; object-position: 50% 15%; }
+
+/* Buyer guides */
+.guide-meta { font-size: 0.9rem; color: var(--muted); margin-top: 0.6rem; }
+.prose h3 { margin-top: 1.4em; }
+.prose ul, .prose ol { padding-left: 1.3em; margin: 0 0 1.1em; }
+.prose li { margin-bottom: 0.45em; }
+.table-wrap { overflow-x: auto; margin: 1.2rem 0 1.6rem; -webkit-overflow-scrolling: touch; }
+.guide-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; background: #fff; min-width: 560px; }
+.guide-table th, .guide-table td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+.guide-table th { background: var(--navy); color: #fff; font-family: 'Montserrat', Arial, sans-serif; font-weight: 600; }
+.guide-table tr:nth-child(even) td { background: var(--bg-alt); }
+.callout { border-left: 4px solid var(--accent); background: var(--bg-alt); padding: 16px 20px; border-radius: 6px; margin: 1.4rem 0; }
+.callout p:last-child { margin-bottom: 0; }
+.toc { background: #fff; border: 1px solid var(--border); border-radius: 6px; padding: 16px 20px; margin: 0 0 2rem; }
+.toc h2 { font-size: 1.05rem; margin: 0 0 0.5rem; }
+.toc ol { margin: 0; }
+.inline-cta { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 22px 24px; margin: 2rem 0; }
+.inline-cta p { color: #d5dbe0; margin-bottom: 0.8rem; }
+.inline-cta strong { color: #fff; }
